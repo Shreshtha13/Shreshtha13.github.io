@@ -9,7 +9,7 @@
 </head>
 
 <body>
-     
+
     <h4>You have visited the websites <span id="count"></span> times.</h4>
 
     <script>
@@ -49,14 +49,16 @@
 
         var count = getCookie('counter');
 
-        if (!count)
-            count = 1;
-
-        else
+        if (count === 1)
             count = parseInt(count) + 1;
 
 
- 
+        else
+            count = 1;
+
+
+
+
         console.log(count);
 
         // setting the cookie
