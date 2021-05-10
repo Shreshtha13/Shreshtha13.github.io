@@ -20,9 +20,9 @@
             cDate.setMonth(cDate.getMonth() + 9);
             cExpires = cDate.toUTCString();
 
-            var CookieString = counter + "=" + cValue + "; expires = " + cExpires;
+            var CookieString = counter + "=" + cValue + ";expires=" + cExpires;
             console.log(CookieString);
-            document.cookie = `"${CookieString}"`;
+            document.cookie = CookieString;
 
         }
 
