@@ -21,7 +21,7 @@
             cExpires = cDate.toUTCString();
 
             var CookieString = counter + "=" + cValue + "; path='/' " + "; expires = " + cExpires;
-
+            console.log(CookieString);
             document.cookie = CookieString;
 
         }
