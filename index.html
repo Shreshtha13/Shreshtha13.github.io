@@ -47,6 +47,8 @@
 
         }
 
+        setCookie('counter', count);
+
         var count = getCookie('counter');
 
         if (count >= 1) {
@@ -62,8 +64,7 @@
         console.log(count);
 
         // setting the cookie
-        setCookie('counter', count);
-
+      
         document.getElementById("count").innerHTML = count;
 
 
